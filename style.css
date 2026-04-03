@@ -6,12 +6,12 @@
      } 
        
        body {
-          background-color: #252525;
+          background-color: #000000;
         }
         header{
             padding: 32px;
-            border-bottom: 1px solid #333;
-            background-color: rgba(0, 0,0,0.1)
+            border-bottom: 3px solid var(--subcor);
+            background-color: rgba(0, 0, 0, 0.1);
         }
         header div{
             text-align: center;
@@ -29,3 +29,76 @@
          color: green;
          transition: color 700ms;
     }
+
+    #box{
+        text-align: center;
+        padding: 32px;
+    }
+    #box img{
+        border-radius: 50%;
+        border: 5px solid #6e0342;
+        margin-bottom: 32px;
+    }
+    #box h1{
+        color: white;
+        font-size: 42px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    #box h2{
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        font-weight: normal;
+        margin-top: 8px;
+        opacity: 0.8;
+    }
+    #box p{
+        color: white;
+        max-width: 500px;
+        margin: 32px auto;
+        font-size: 24px;
+        line-height: 34px;
+    }
+    :root{
+    --subcor: #57a615;
+    }
+    .links{
+        text-align: center;
+    }
+    
+    .links a {
+        color: white;
+        font-size: 20px;
+        line-height:30px;
+        margin:0 16px;
+        text-decoration: none;
+    }
+
+    .links a:hover{
+        color: var(--subcor);
+        transition: 600ms;
+        font-size: 23px;
+    }
+    #box h1 {
+        padding: 4px;
+    }
+    #box h2 {
+        padding: 10px;
+    }
+    #box p:hover{
+        font-size: 23px;
+    }
+     #box a{
+        color: var(--subcor);
+        transition: 600ms;
+    }
+    #linksFooter{
+        padding-top: 32px;
+    }
+    #linksFooter a {
+        padding-top: 32px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid var(--subcor);
+    }
+
